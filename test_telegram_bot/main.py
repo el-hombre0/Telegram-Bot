@@ -6,7 +6,7 @@ import re
 
 
 # TOKEN
-bot = telebot.TeleBot('1899126465:AAHo7DyfTZxvM7yuYC2y1RES3K9AA-qwHLo')
+bot = telebot.TeleBot('....')
 
 
 # приветствие

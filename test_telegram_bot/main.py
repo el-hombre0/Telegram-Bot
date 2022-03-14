@@ -168,3 +168,5 @@ if __name__ == '__main__':
             bot.polling(none_stop=True)
         except Exception as ex:
             telebot.logger.error(ex)
+
+#Доделать курс валют и фото относительно состояния на фондовом рынке

@@ -155,7 +155,10 @@ def calculator(message):
 
 # Курс валют
 def currencyRate(message):
-
+   for exc in load_exchange():
+       if ccy_key == exc['ccy']:
+           return exc
+   return False
 # Запуск бота
 if __name__ == '__main__':
     while True:

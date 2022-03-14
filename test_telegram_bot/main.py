@@ -1,3 +1,4 @@
+from locale import currency
 import keyboards as kb
 import telebot
 
@@ -26,6 +27,8 @@ def greeting(message):
         start_calc(message)
     elif message.text == '🔡Консольная Графика':
         magictext(message)
+    elif message.text == '$Курс Валют':
+        currencyRate(message)
 
 
 # погода
@@ -150,6 +153,8 @@ def calculator(message):
     bot.send_message(message.chat.id, 'Ответ:')
     bot.send_message(message.chat.id, str(res), reply_markup=kb.greetkeyboard())
 
+# Курс валют
+def currencyRate(message):
 
 # Запуск бота
 if __name__ == '__main__':

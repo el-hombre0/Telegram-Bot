@@ -27,8 +27,10 @@ def greeting(message):
         start_calc(message)
     elif message.text == '🔡Консольная Графика':
         magictext(message)
-    elif message.text == '$Курс Валют':
+    elif message.text == '$ Курс Валют':
         currencyRate(message)
+    elif message.text == 'Помощь':
+        help_button(message);
 
 
 # погода
